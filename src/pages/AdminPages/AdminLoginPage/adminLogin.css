@@ -1,0 +1,95 @@
+:root {
+    --PrimaryColor: hsl(215, 78.0%, 17.8%);
+    --HoverColor: rgb(3, 73, 171);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 0%);
+    --textColor: hsl(0, 0%, 35%);
+    --whiteColorDeam: hsl(8, 0%, 93%);
+    --greyBg: hsl(0, 0%, 96%);
+    --greyText: hsl(75, 78.0%, 21.4%);
+    --inputColor: hsl(338, 12%, 97%);
+}
+
+.admin-container{
+    background: url(../../../Assets/pexels-sam-kolder-2387873.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--PrimaryColor);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.admin-section{
+    border: 1px solid var(--PrimaryColor);
+    border-radius: 10%;
+    padding: 15px;
+    background: rgba(0, 82, 14, 0.5);
+    box-shadow: 0px 0px 20px 1px ;
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+}
+
+.content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.input-section{
+    color: var(--whiteColor);
+    text-align: center;
+}
+
+.admintitle{
+    color: var(--whiteColor);
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+input{
+    width: 20rem;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+}
+
+button{
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: var(--PrimaryColor);
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    flex-wrap: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    background-color: var(--HoverColor);
+}
+
+.label{
+    font-size: 0.9rem;
+    display:flex;
+
+}
+.inputandlabel{
+    margin-top: 20px;
+}
+
+.errortext{
+    color: red;
+}

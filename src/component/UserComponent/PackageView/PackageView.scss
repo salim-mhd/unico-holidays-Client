@@ -1,0 +1,238 @@
+:root {
+    --PrimaryColor: hsl(215, 78.0%, 17.8%);
+    --HoverColor: rgb(3, 73, 171);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 0%);
+    --textColor: hsl(0, 0%, 35%);
+    --whiteColorDeam: hsl(8, 0%, 93%);
+    --greyBg: hsl(0, 0%, 96%);
+    --greyText: hsl(75, 78.0%, 21.4%);
+    --inputColor: hsl(338, 12%, 97%);
+}
+
+
+.viewmore-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: max-content;
+
+    .viewmore-cubcontainer {
+        margin-top: 3rem;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--PrimaryColor);
+        box-shadow: 0px 0px 50px 0px;
+        width: 80%;
+        border-radius: 20px;
+
+
+        .viewmore-comment-inputandmainsection{
+            border: 1px solid var(--PrimaryColor);
+            border-radius: 20px;
+
+            .viewmore-comment-mainsection{
+                overflow-y: scroll;
+                height: 200px;
+            }
+
+            .viewmore-comment-section{
+                margin: 15px;
+
+                .viewmore-comment-section-imgeandname{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .viewmore-comment-section-imge{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50px;
+                        margin: 10px;
+                    }
+
+                    .viewmore-comment-section-name{
+                        margin-left: 10px;
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                }
+
+                .viewmore-comment-section-content{
+                    margin-left: 9%;
+                    font-size: 0.9rem;
+                }
+
+                .viewmore-comment-section-time{
+                    color: gray;
+                    margin-left: 9%;
+                    margin-top: 20px;
+                    font-size: 0.7rem;
+                    font-weight: 500;
+                }
+            }
+
+            .viewmore-comment{
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                margin: 50px;
+                border: 1px solid var(--PrimaryColor);
+                border-radius: 10px;
+    
+                .viewmore-comment-commentinput{
+                    width: 80%;
+                    border: none;
+                }
+    
+                .viewmore-comment-commentbutton{
+                    background-color: var(--PrimaryColor);
+                    color: var(--whiteColor);
+                    padding: 11px;
+                    width: 20%;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+
+
+        .viewmore-title {
+            font-weight: 600;
+            text-align: start;
+            font-size: 2rem;
+            margin: 2rem;
+
+            .viewmor-subtitle {
+                font-size: 1rem;
+            }
+        }
+
+        .viewmore-image {
+            border-radius: 20px;
+        }
+
+        .vewmore-likecomment {
+            display: flex;
+            justify-content: space-between;
+            .viewmore-like {
+                color: var(--PrimaryColor);
+                margin: 0.5rem;
+                font-size: 1.5rem;
+                text-align: start;
+            }
+
+            .viewmore-likeicon {
+                margin-right: 10px;
+            }
+
+            .viewmore-likecount {
+                font-size: 1.2rem;
+            }
+        }
+
+        .viewmore-smallcontainerdiv{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+
+            .viewmore-smallcontainer{
+                border-radius: 10px;
+                border: 1px solid var(--PrimaryColor);
+                width: 50%;
+            }
+
+            .viewmore-description{
+                padding:20px;
+                width: 50%;
+            }
+
+            .viewmore-smallcontainer-amount{
+                margin: 20px;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+            .viewmore-smallcontainer-contant{
+
+                .viewmore-smallcontainer-contant-btn{
+
+                    .viewmore-smallcontainer-contant-btn-icon{
+                        font-size: 1.2rem;
+                        margin-right: 7px;
+                    }
+                    .viewmore-smallcontainer-contant-btn-text{
+                        font-size: 1rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .viewmore-smallcontainer-location{
+                font-size: 1.3rem;
+                margin: 20px;
+            }
+        }
+
+        .viewmore-button{
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+
+            .viewmore-buttoncontent{
+                padding: 0;
+                width: 200px;
+                height: 60px;
+                border-radius: 10px;
+            }
+        }
+
+
+
+
+    }
+}
+
+@media screen and (max-width:830px) {
+    .viewmore-container{
+
+        .viewmore-cubcontainer{
+
+            .viewmore-title{
+                font-size: 0.9rem;
+                font-weight: 800;
+                margin-left: 10px;
+
+                .viewmor-subtitle{
+                    font-size: 0.6rem;
+                font-weight: 800;
+
+                }
+            }
+        }
+
+        .viewmore-comment-inputandmainsection{
+            align-items: flex-end;
+            .viewmore-comment{             
+                
+                justify-content: end;
+
+                .viewmore-comment-commentinput{
+
+                }
+                .viewmore-comment-commentbutton{
+                    position: absolute;
+                    margin-top: 4px;
+                    right: 20%;
+                    font-size: 0.6rem;
+                    padding-top: 50px;
+                    
+                }
+            }
+        }
+    }
+
+}
